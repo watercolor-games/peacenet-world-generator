@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peacenet.WorldGenerator", "Peacenet.WorldGenerator.csproj", "{50E4AA42-41D1-4C93-A2B1-80398D86E098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peacenet.WorldGenerator.Visualizer", "..\Peacenet.WorldGenerator.Visualizer\Peacenet.WorldGenerator.Visualizer.csproj", "{635F4F1C-7250-4818-AC22-5912811DC2AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50E4AA42-41D1-4C93-A2B1-80398D86E098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E4AA42-41D1-4C93-A2B1-80398D86E098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E4AA42-41D1-4C93-A2B1-80398D86E098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E4AA42-41D1-4C93-A2B1-80398D86E098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{635F4F1C-7250-4818-AC22-5912811DC2AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{635F4F1C-7250-4818-AC22-5912811DC2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{635F4F1C-7250-4818-AC22-5912811DC2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{635F4F1C-7250-4818-AC22-5912811DC2AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAAA567F-83A5-45E2-B0E5-E056FE34A6AD}
+	EndGlobalSection
+EndGlobal
