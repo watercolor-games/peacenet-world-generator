@@ -15,7 +15,31 @@ namespace Peacenet.WorldGenerator
         private bool _spawnStoryNPCs = false;
         private double[] _map = null;
         private int _maxDensity = 64;
-        private float _chance = 0.10f;
+        private float _chance = 0.1f;
+
+        public bool SpawnStoryNPCs
+        {
+            get
+            {
+                return _spawnStoryNPCs;
+            }
+            set
+            {
+                _spawnStoryNPCs = value;
+            }
+        }
+
+        public int MinStoryNPCs
+        {
+            get
+            {
+                return _minimumStoryNPCs;
+            }
+            set
+            {
+                _minimumStoryNPCs = value;
+            }
+        }
 
 
         public NPCMap(int seed, double[] heightmap)
@@ -94,10 +118,16 @@ namespace Peacenet.WorldGenerator
                 if (_rnd.NextDouble() > _chance)
                     continue;
 
-                int type = _rnd.Next(6);
+                int type = _rnd.Next(6)+2;
                 map[index] = type;
-                
+#if DEBUG
+                Console.WriteLine($"map[{index}] = {type}");
+#endif
             }
+
+#if DEBUG
+            Console.WriteLine($"map[singular] = {map.Where(x => x % 2 == 0).Count()}");
+#endif
 
             return map;
         }
